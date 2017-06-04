@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Sync to Slides</title>
+    <link>https://websiddu.github.io/sync-to-slides/files/appcast.xml</link>
+    <description>Sync to Slides description</description>
+    <language>en</language>
+      <item>
+        <title>Version 2.2</title>
+        <description>
+          <![CDATA[
+            <h2> Update v2.2 </h2>
+            <ul>
+            <li> Now user user created page elements won't get deleted</li>
+            <li> Symbols will correctly keep comments</li>
+            <li> Added the appcast updates</li>
+            </ul>
+          ]]>
+        </description>
+        <pubDate>May, 28 Mar 2017 11:58:00 +0000</pubDate>
+        <enclosure url="https://websiddu.github.io/sync-to-slides/files/builds/sync-to-slides.v.2.2.zip" sparkle:version="2.2" length="684461" type="application/octet-stream" />
+      </item>
+  </channel>
+</rss>
