@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link href="/images/favicon.ico" rel="icon" type="image/ico" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title>Sync to Slides – Help</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.pink-purple.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+
+
+    <link href="/stylesheets/site.css" rel="stylesheet" />
+    <script src="/javascripts/site.js"></script>
+  </head>
+  <body>
+    <header class="hero">
+  <div class="container">
+    <section class="header">
+      <div class="logo">
+        <a href="/">
+          <img src="images/logo.svg" alt="logo" class="logo-img">
+        </a>
+      </div>
+    </section>
+    <section class="header-content-container">
+      <div class="header-content">
+        <h1 class="page-title">How to <small>Sync to Slides</small></h1>
+        <h3 class="tagline">
+            A helpful guide for using this plugin
+        </h3>
+        <p class="description"></p>
+      </div>
+    </section>
+  </div>
+</header>
+<div class="dialog hide">
+  <button class="close"> X </button>
+  <section class="video">
+
+  </section>
+</div>
+
+<div class="container">
+  <section class="section" id="installation">
+    <h3 class="section-heading">Installing</h3>
+    <div class="section-content">
+      <ul>
+        <li> Download the Sync to Slides plugin <a href="https://sync-to-slides.googleplex.com/assets/sync-to-slides.v.2.0.zip ">here</a> </li>
+        <li>Unzip the file by double-clicking it (or by using any unzipping tool)</li>
+        <li> Double click on the <code>sync-to-slides.sketchplugin</code> file </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="installation">
+    <h3 class="section-heading">Best practices</h3>
+    <div class="section-content">
+      <ul>
+        <li> Slides API have limited request payload sizes. Don't expect the plugin to work if you sync 50 artboards with ton of layers at a time. The workaround can be select max of 10 artboards  at a time.  </li>
+        <li>You can also lock the layer if you don't want that layer to be exported for targeted commenting. Locking layers that don't need commenting support will drastically decrease the sync time.</li>
+        <li>If you don't want commenting support at all, goto settings and say no to export layers. </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="installation">
+    <h3 class="section-heading">How this works </h3>
+    <div class="section-content">
+      <p>
+        To make sure your images are secure, Sync to Slides uploads the exported artboards to a temporary folder (called SyncToSlides) in your Google Drive, pastes each flattened image to a slide in the specified deck, and deletes the temporary folder.
+      </p>
+      <h6 style="font-weight: bold;">FAQ's</h6>
+      <ul>
+        <li>
+          <i>How can I choose the export size? </i><br>
+          You can click on the Settings icon in the footer and choose the export size.
+        </li>
+        <li>
+          <i>Why are my normal export and sync to slides export are differnt? </i><br>
+          Sync to slides will upload the image to the drive and then put it on the slides, so it may loose the quailty.
+        </li>
+        <li>
+            <i>Can I add other slides?</i><br>
+            Absolutly, you add other slides in the deck, they won't be affected.
+        </li>
+        <li>
+          <i>How is the subsequent update happens?</i><br>
+          Only you upload to slides, the plugin will respect your order in the slides deck and will update in the same order.
+          Which means even the order in your artboard changes, the order in the slides remains.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="installation">
+    <h3 class="section-heading">Usage</h3>
+    <div class="section-content">
+      <div class="steps">
+        <div class="step">
+        <div class="step-heading"><span>1</span>Login</div>
+        <div class="step-content">
+          Open up the Sync to Slides plugin (Plugins > Sync to Slides…) and click on the “Sign in with Google” button.
+          <img src="images/login.png" alt="login">
+        </div>
+        </div>
+      <div class="step">
+        <div class="step-heading"><span>2</span>Get the slides URL or ID</div>
+        <div class="step-content">
+          Navigate to a new or existing Slides document, copy the URL, and paste it into the “Slides URL or ID” text field. Alternatively, you can paste just the ID (the slew of alphanumerical characters immediately following “https://docs.google.com/presentation/d/” in the URL).
+          <img src="images/landing.png" alt="landing">
+        </div>
+        </div>
+      <div class="step">
+        <div class="step-heading"><span>3</span>Choose artboards</div>
+        <div class="step-content">
+            Click the radio button next to the export option you prefer: either all artboards in the current page or just the ones you currently have selected.
+            <br>
+            <br>
+        </div>
+
+        </div>
+      <div class="step">
+        <div class="step-heading"><span>4</span>Upload</div>
+        <div class="step-content">
+          Click on the “Sync to Slides” button, sit back, and relax. The plugin will do all the work to create a new slide for each artboard you’ve exported.
+          <img src="images/upload.png" alt="upload">
+          <img src="images/success.png" alt="success">
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+
+  </body>
+</html>
