@@ -1,0 +1,26 @@
+{
+  "name": "Sync to Slides",
+  "description": "Sync your artboards to Google Slides",
+  "author": "Siddhartha Gudipati",
+  "email": "siddu.siddhartha@gmail.com",
+  "homepage": "http://websiddu.github.io/sketch-to-slides",
+  "version": "2.2",
+  "appcast": "https://websiddu.github.io/sync-to-slides/files/appcast.xml",
+  "identifier": "com.google.sketch.synctoslides",
+  "commands": [
+    {
+      "name": "Sync to Slides...",
+      "identifier": "open",
+      "handler": "commandSyncPanel",
+      "script": "sync.sketchscript",
+      "shortcut": "command shift u"
+    }
+  ],
+  "menu": {
+    "title": "Sync to Slides",
+    "isRoot": true,
+    "items": [
+      "open"
+    ]
+  }
+}

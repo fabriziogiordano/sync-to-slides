@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="panel">
+    <div class="panel-header">
+      <label for="presentationID" class="panel-input-label">Presentation</label>
+      <div class="panel-title hide">
+        <h1></h1>
+        <div class="icon" style="margin-right: 9px;">
+          <a href="#" class="linkToSlides"><img src="assets/img/link.svg" alt="link"></a>
+        </div>
+        <div class="icon" id="removeButton">
+          <img src="assets/img/ic_close_black_24dp.svg" alt="close">
+        </div>
+      </div>
+      <input type="text" id="slidesURL" class="panel-input" placeholder="Enter slides URL or id...">
+    </div>
+    <div class="loading" id="loading">
+      <div class="loading-progress">
+        <div class="indeterminate"></div>
+      </div>
+    </div>
+    <div class="panel-overlay" id="overlay">
+      <img src="assets/img/coach-marks.svg" alt="coach marks">
+    </div>
+    <div class="overlay"></div>
+    <div class="panel-body">
+      <div class="panel-table">
+        <div class="panel-table-header">
+          <div class="panel-tabel-row">
+            <label class="control control--checkbox">
+              <span id="pageName">Artbord name</span>
+              <input type="checkbox" id="toggleSelectAll"/>
+              <div class="control__indicator"></div>
+            </label>
+            <div class="refresh-button">
+              <button class="dropdown-button" id="refreshArtboards" title="Fetch fresh artboard data">
+                <img class="refreshArtboards" style="width: 13px;" src="assets/img/refresh.svg" alt="">
+              </button>
+            </div>
+            <div class="sort-button">
+              <button class="dropdown-button" id="sortDropdown" title="Sort">
+                <img class="selectedOrder" src="assets/img/none.svg" alt="">
+              </button>
+              <div class="dropdown">
+                <div class="dropdown-option selected" data-value="none">
+                  <img src="assets/img/none.svg" alt="">
+                  <span>None</span>
+                </div>
+                <div class="dropdown-option" data-value="reverse">
+                  <img src="assets/img/reverse.svg" alt="">
+                  <span>Reverse</span>
+                </div>
+                <div class="dropdown-option" data-value="alphabetical">
+                  <img src="assets/img/alphabetical.svg" alt="">
+                  <span>Alphabetical A-Z</span>
+                </div>
+                <div class="dropdown-option" data-value="reverse-alphabetical">
+                  <img src="assets/img/reverse-alphabetical.svg" alt="">
+                  <span>Reverse alphabetical Z-A</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel-table-body">
+        </div>
+      </div>
+    </div>
+    <div class="panel-footer">
+      <button id="syncToSlides" class="panel-button" disabled> Sync to Slides </button>
+    </div>
+
+    <div class="panel-sub-footer">
+      <div class="panel-status">
+        <span class="message"></span> <time class="timeago" datetime=""></time>
+      </div>
+      <div class="updates">
+        <a href="https://sync-to-slides.googleplex.com/updates">🙋🏼‍♂</a>
+        <div class="tooltip">New updates available!</div>
+      </div>
+      <button class="settings-button">
+        <img src="assets/img/settigns.svg" alt="">
+      </button>
+    </div>
+  </div>
+  <div class="tost">
+    Refreshed!
+  </div>
+
+  <div class="settings-overlay">
+    <div class="settings-overlay-top"></div>
+  </div>
+  <div class="settings">
+    <div class="settings-header">Settings</div>
+    <div class="settings-body">
+      <div class="export-settings">
+        <div class="filed">
+          <label for="">Export size</label>
+          <select name="exportSize" id="exportSize">
+            <option value="1" class="option">1x</option>
+            <option value="2" class="option" selected>2x</option>
+            <option value="3" class="option">3x</option>
+            <option value="4" class="option">4x</option>
+            <option value="5" class="option">5x</option>
+          </select>
+        </div>
+        <br>
+        <div class="filed">
+          <label for="">Export layers </label>
+          <select name="exportLayers" id="exportLayers">
+            <option value="1" class="option" selected>Yes</option>
+            <option value="2" class="option">No</option>
+          </select>
+        </div>
+      </div>
+      <div class="logged-user">
+        <span class="ulabel">Logged in as</span>
+        <div class="user">
+          <div class="user-info">
+            <div style="font-weight: 500; margin-bottom: 6px;" class="username"><span class="muted">Loading...</span></div>
+            <div style="color: #888;" class="email">...</div>
+            <button class="signout-button signout">Sign out</button>
+          </div>
+        </div>
+      </div>
+      <div class="links">
+        <div><a href="https://websiddu.github.io/sync-to-slides/" class="link" target="_blank">About</a></div>
+        <div><a href="https://websiddu.github.io/sync-to-slides/help.html" class="link" target="_blank">Help</a></div>
+        <div><a href="https://websiddu.github.io/sync-to-slides/updates.html" class="link" target="_blank">Updates?</a></div>
+        <div><span class="ver"></span></div>
+      </div>
+    </div>
+    <div class="settings-footer">
+      <span></span>
+      <button class="done-button settings-done">Done</button>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="assets/js/lib/jquery-2.2.4.min.js"></script>
+  <script type="text/javascript" src="assets/js/lib/jquery-timeago.js"></script>
+  <script type="text/javascript" src="assets/js/analytics.min.js"></script>
+  <script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+</html>

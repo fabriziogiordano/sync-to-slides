@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="145px" height="98px" viewBox="0 0 145 98" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>svg</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="08.-Success" transform="translate(-182.000000, -156.000000)">
+            <g id="svg" transform="translate(183.000000, 157.000000)">
+                <path d="M5.58203125,6.54296875 C14.0319103,38.6396462 24.7117309,57.0485386 49,62" id="Path-2" stroke="#979797" stroke-width="2"></path>
+                <path d="M0.82421875,14.3046875 C6.05341284,-2.54602391 1.67476324,-2.48283435 12.5273438,8.3359375" id="Path-3" stroke="#979797" stroke-width="2"></path>
+                <text id="Get-started-by-enter" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" fill-opacity="0.699813179" fill="#000000">
+                    <tspan x="23.4521484" y="82">Get started by entering </tspan>
+                    <tspan x="31.6552734" y="96">the Slides URL or ID</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

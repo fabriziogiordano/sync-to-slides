@@ -1,0 +1,6 @@
+framework module SyncToSlides {
+  umbrella header "SyncToSlides.h"
+
+  export *
+  module * { export * }
+}

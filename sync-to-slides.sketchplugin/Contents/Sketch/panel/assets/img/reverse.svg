@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="17px" viewBox="0 0 18 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>reverse</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 24 0 24 24 0 24"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="09.-Icons" transform="translate(-227.000000, -170.000000)">
+            <g id="reverse" transform="translate(224.000000, 166.000000)">
+                <g id="Group">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Shape"></g>
+                    <path d="M18,11.01 L18,11.01 L21,11.01 L17,15 L13,11.01 L16,11.01 L16,4 L18,4 L18,11.01 Z M7,21 L3,17.01 L6,17.01 L6,4 L8,4 L8,17.01 L11,17.01 L7,21 Z" id="Combined-Shape" fill="#757575" fill-rule="nonzero" mask="url(#mask-2)" transform="translate(12.000000, 12.500000) rotate(180.000000) translate(-12.000000, -12.500000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

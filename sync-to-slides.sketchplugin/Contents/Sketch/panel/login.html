@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Login</title>
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family:  "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+      overflow: hidden;
+      height: 100%;
+      width: 100%;
+      -webkit-user-drag: none;
+      -webkit-user-select: none;
+    }
+
+    .large-header {
+      height: 50%;
+      position: fixed;
+      top: 0;
+    }
+
+    .header {
+      height: 50vh;
+      background: #F4B402;
+    }
+
+    .sign-in {
+      border: 0;
+      color: #fff;
+      padding: 12px 9px 12px 50px;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.22px;
+      background: #4285F4;
+      box-shadow: 0 0 1px 0 rgba(0,0,0,0.12), 0 1px 1px 0 rgba(0,0,0,0.24);
+      border-radius: 2px;
+      position: relative;
+      font-family:  "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+      margin: 0;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .sign-in:hover {
+      background: #4285F4;
+      box-shadow: 0 0 2px 0 rgba(0,0,0,0.12), 0 2px 2px 0 rgba(0,0,0,0.24);
+      border-radius: 2px;
+    }
+
+    .sign-in:active {
+      background: #3367D6;
+    }
+
+    .sign-in .g-logo {
+      position: absolute;
+      left: 1px;
+      top: 1px;
+      font-weight: 400;
+    }
+
+    .body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .title {
+      font-size: 25px;
+      margin: 70px 0 8px;
+      text-align: center;
+      color: #43434A;
+    }
+
+    .title img {
+      width: 50vw;
+      -webkit-user-drag: none;
+      pointer-events: none;
+    }
+
+    .title-content {
+      font-size: 13px;
+      text-align: center;
+      color: #666;
+      margin: 0 30px;
+      line-height: 1.5;
+      flex: 1;
+    }
+    .button {
+      margin-top: 30px;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .logo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -40px;
+      margin-top: -50px;
+      padding: 15px;
+      background: #fff;
+      border-radius: 8px 0 0 0;
+
+    }
+
+    .logo::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 0px;
+      width: 0px;
+      border: solid 10px #F4B402;
+      border-bottom-color: transparent;
+      border-left-color: transparent;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="large-header" class="large-header">
+      <canvas id="canvas"></canvas>
+  </div>
+  <div class="header">
+
+  </div>
+  <div class="logo animated fadeIn">
+    <img src="assets/img/logo.svg" alt="">
+  </div>
+  <div class="body">
+
+    <div class="title animated fadeInUp">
+      <img src="assets/img/logo-text.svg" alt="Logo">
+    </div>
+    <div class="title-content animated fadeInUp">
+      <p>
+        Upload artboards to Google Slides with ease. For a hassel free presentation making.
+      </p>
+    </div>
+
+    <div class="button animated fadeInUp">
+      <button id="signIn" class="sign-in">
+        <div class="g-logo"><img src="assets/img/g.svg" alt=""></div>
+        <span>Sign in with Google </span>
+      </button>
+    </div>
+  </div>
+
+  <script src="assets/js/analytics.min.js"></script>
+  <script src="assets/js/c.js"></script>
+  <script>
+    var button = document.getElementById('signIn');
+    button.onclick = function(e) {
+      ga('send', 'event', 'login panel', 'login', 'login');
+      window.location.hash = 'signIn';
+    }
+
+    window.oncontextmenu = function (evt) {
+      if (!evt.altKey || !evt.ctrlKey || !evt.shiftKey) {
+        evt.preventDefault();
+      }
+    };
+  </script>
+</body>
+</html>
